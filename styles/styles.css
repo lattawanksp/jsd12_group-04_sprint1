@@ -30,7 +30,7 @@
   height: 200px;
   border-radius: 12px;
   overflow: hidden;
-  background-image: url("/jsd12_group-04_sprint1/src/Art-Furniture-rainbow-bench-1024x680.jpeg");
+  background-image: url("../src/Art-Furniture-rainbow-bench-1024x680.jpeg");
   background-size: cover;
   background-position: center;
 
@@ -39,6 +39,13 @@
   justify-content: space-between;
   padding: 14px 14px;
   box-sizing: border-box;
+
+  cursor: pointer;
+  transition: tranform 0.2s ease;
+}
+
+.recommend-part:hover {
+  filter: brightness(0.9);
 }
 
 .recommend-part-title {
@@ -69,7 +76,7 @@
   background: #f0f0f0;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .recommend-part {
     height: 300px;
   }
